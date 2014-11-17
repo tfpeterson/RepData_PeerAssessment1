@@ -146,8 +146,21 @@ Are there differences in activity patterns between weekdays and weekends?
 
 ```r
 library(lattice)
-library(timeDate)
+```
 
+```
+## Warning: package 'lattice' was built under R version 3.1.2
+```
+
+```r
+library(timeDate)
+```
+
+```
+## Warning: package 'timeDate' was built under R version 3.1.2
+```
+
+```r
 activity.imp$daytype <- "" 
 
 for(i in 1:length(activity.imp$date)) {
