@@ -319,18 +319,9 @@ imp_median
 <p>Are there differences in activity patterns between weekdays and weekends?</p>
 
 <pre><code class="r">library(lattice)
-</code></pre>
+library(timeDate)
 
-<pre><code>## Warning: package &#39;lattice&#39; was built under R version 3.1.2
-</code></pre>
-
-<pre><code class="r">library(timeDate)
-</code></pre>
-
-<pre><code>## Warning: package &#39;timeDate&#39; was built under R version 3.1.2
-</code></pre>
-
-<pre><code class="r">activity.imp$daytype &lt;- &quot;&quot; 
+activity.imp$daytype &lt;- &quot;&quot; 
 
 for(i in 1:length(activity.imp$date)) {
   if(isWeekday(activity.imp$date[i])) {activity.imp$daytype[i] &lt;- &quot;weekday&quot;}
